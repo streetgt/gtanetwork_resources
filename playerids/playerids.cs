@@ -149,14 +149,7 @@ public class PlayerIds : Script
     /// <returns>id or -1 in case of don't find the player</returns>
     public int getIdFromClient(Client target)
     {
-        int id = players.IndexOf(target);
-
-        if (id == -1)
-        {
-            return -1;
-        }
-
-        return id;
+        return players.IndexOf(target);;
     }
 
     /// <summary>
