@@ -1,0 +1,14 @@
+<meta>
+    <info name="Player Ids" description="SA-MP Player ID's" author="StreetGT" version="1.0" type="script" async="true"/>
+    
+    <script src="playerids.cs" type="server" lang="csharp" />
+
+     <settings>
+     	<setting name="max_players" value="50" default="50"/>
+	    <setting name="player_tags" value="false" default="false"/>
+  	</settings>
+
+  	<export class="PlayerIds" function="findPlayer" />
+  	<export class="PlayerIds" function="getClientFromId" />
+  	<export class="PlayerIds" function="getIdFromClient" />
+</meta>
