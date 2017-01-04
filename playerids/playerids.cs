@@ -68,13 +68,6 @@ public class PlayerIds : Script
         }
     }
 
-    [Command("giveweapon", "~y~USAGE: ~w~/giveweapon [id/PartOfName] [weapon]", GreedyArg = true)]
-    public void GiveWeaponCommand(Client sender, string idOrName, WeaponHash weapon)
-    {
-        Client target = findPlayer(sender, idOrName);
-        API.givePlayerWeapon(target, weapon, 9999, true, true);
-    }
-
     /// <summary>
     /// Find a player given a partial name or a ID
     /// </summary>
